@@ -10,11 +10,11 @@ fn main() {
             <div
                 style="height: 500px; width: 500px; background: black;"
                 // This works as expected
-                on:click=move |_| debug!("Clicked!")
+                on:click=|_| debug!("Clicked!")
                 // This doesn't work
-                on:mouseenter=move |_| debug!("Mouse entered!")
+                on:mouseenter=|_| debug!("Mouse entered!")
                 // This doesn't work either
-                on:mouseleave=move |_| debug!("Mouse left!")
+                on:mouseleave=|_| debug!("Mouse left!")
             />
         }
     })
